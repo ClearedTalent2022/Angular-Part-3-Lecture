@@ -11,11 +11,6 @@ export class AppComponent {
 
   author = {
     name: "Pearce Odegard",
-    role: "Lead Instructor",
-    languages: [
-      "JavaScript",
-      "C#",
-      "Java"
-    ]
+    role: "Lead Instructor"
   }
 }
