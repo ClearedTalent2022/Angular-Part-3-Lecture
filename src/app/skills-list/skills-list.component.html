@@ -1,6 +1,14 @@
 <h3>Skills</h3>
-<ul>
+<ul *ngIf="languages.length < 4; else tooManySkills">
     <!-- for(let i = 0; i < languages.length; i++) -->
     <!-- for(let language of languages) -->
     <li *ngFor="let language of languages">{{ language }}</li>
 </ul>
+
+<!-- We only want this p tag to render IF there are
+    more than 4 languages -->
+<ng-template #tooManySkills>
+    <p>
+        Too many skills to display! Reduce the number of skills.
+    </p>
+</ng-template>

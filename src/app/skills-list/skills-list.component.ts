@@ -10,10 +10,7 @@ export class SkillsListComponent implements OnInit {
   languages: string[] = [
     "JavaScript",
     "C#",
-    "Java",
-    "Python",
-    "React",
-    "Angular"
+    "Java"
   ]
 
   constructor() { }
