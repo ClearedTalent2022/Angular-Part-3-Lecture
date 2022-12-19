@@ -1,6 +1,6 @@
 <h3>Skills</h3>
 <ul>
-    <li>{{ languages[0] }}</li>
-    <li>{{ languages[1] }}</li>
-    <li>{{ languages[2] }}</li>
+    <!-- for(let i = 0; i < languages.length; i++) -->
+    <!-- for(let language of languages) -->
+    <li *ngFor="let language of languages">{{ language }}</li>
 </ul>
