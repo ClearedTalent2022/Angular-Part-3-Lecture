@@ -15,6 +15,10 @@ export class SkillsListComponent implements OnInit {
     "TypeScript"
   ]
 
+  skillsError: string = "red";
+
+  imgUrl: string = "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg";
+
   // Instead of having this function just
   // log something to the console, let's
   // have this function delete one of the 

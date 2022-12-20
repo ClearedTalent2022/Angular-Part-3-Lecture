@@ -13,4 +13,13 @@ export class AppComponent {
     name: "Pearce Odegard",
     role: "Lead Instructor"
   }
+
+  changeColor: boolean = false;
+
+  // now that we have this alternateColor
+  // variable, we could create a function
+  // that flips the value of alternateColor
+  alternateColor() {
+    this.changeColor = !this.changeColor;
+  }
 }

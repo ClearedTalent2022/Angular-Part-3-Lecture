@@ -8,7 +8,7 @@
 <!-- We only want this p tag to render IF there are
     more than 4 languages -->
 <ng-template #tooManySkills>
-    <p>
+    <p [style.color]="skillsError">
         Too many skills to display! Reduce the number of skills.
     </p>
 </ng-template>
@@ -19,3 +19,11 @@
 <button (click)="removeSkill()">
     Remove skill!
 </button>
+
+<!-- Let's only make this div visible IF
+    the languages array has less than 4 items
+    in it -->
+<!-- <div class="imageDiv"> -->
+<div [class.imageDiv]="languages.length > 3">
+    <img [src]="imgUrl" height="160px" />
+</div>

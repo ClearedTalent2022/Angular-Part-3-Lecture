@@ -1,5 +1,7 @@
 <h1>{{ title }}</h1>
-<h2>Author name: {{ author.name }}</h2>
+<h2 [class.colorChange]="changeColor" (click)="alternateColor()">
+    Author name: {{ author.name }}
+</h2>
 <h2>Author role: {{ author.role }}</h2>
 
 <app-skills-list></app-skills-list>
